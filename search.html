@@ -1,0 +1,44 @@
+---
+layout: default
+title: Find a Momism
+---
+
+<head>
+	<!---<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
+	<link rel="stylesheet" href="tipuesearch/css/normalize.css"> --->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="tipuesearch/tipuesearch_content.js"></script>
+
+	<!--- <link rel="stylesheet" href="tipuesearch/css/tipuesearch.css"> --->
+	<script src="tipuesearch/tipuesearch_set.js"></script>
+	<script src="tipuesearch/tipuesearch.min.js"></script>
+</head>
+
+<!-- duplicate search box
+<form action="search.html">
+<div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
+<div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 2 characters" required></div>
+<div style="clear: both;"></div>
+</form>
+-->
+
+<!--Here's a bunch of resulty stuff-->
+
+<form action="search.html">
+<h2>Poke Around Some Momisms</h2>
+<div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon" style="vertical-align: middle;">
+<span class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" placeholder="Search..." title="At least 3 characters required"></span>
+<span style="clear: both;"></span>
+</form>
+</div>
+<div id="tipue_search_content"></div>
+
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch();
+});
+</script>
+<!--
+<p></p>
+<p><small>2020-01-07</small></p>
+-->
